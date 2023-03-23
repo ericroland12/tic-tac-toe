@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="tic-tac-toe.css">
+    <script src="tic-tac-toe.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="text_1">Player 1 is X!</div>
+    <div class="choose_player_text"></div>
+
+    <div class="container-fluid">
+        <div class="title">
+            <span class="tic">TIC </span>
+            <span class="tac">TAC </span>
+            <span class="toe">TOE </span>   
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="input-player">
+                <form class="form form-group">
+                    <label for="player">Player 1</label>
+                    <input type="text" class="form-control" placeholder="enter your name">
+                    <button type="submit" class="btn">Enter</button>
+                </form> 
+            </div>
+            <svg class="svg" height="300" width="300">
+                <line x1="34" y1="31" x2="255" y2="255" id="line_b1b9"/>
+                <line x1="10" y1="150" x2="290" y2="150" id="line_b4b6"/>
+                <line x1="10" y1="45" x2="290" y2="45" id="line_b1b3"/>
+                <line x1="10" y1="250" x2="290" y2="250" id="line_b7b9" />
+                <line x1="46" y1="20" x2="46" y2="280" id="line_b1b7"/>
+                <line x1="150" y1="20" x2="150" y2="280" id="line_b2b8"/>
+                <line x1="254" y1="20" x2="254" y2="280" id="line_b3b9" />
+                <line x1="266" y1="27" x2="32" y2="269" id="line_b3b7" /> 
+            </svg>
+            <div class="box">
+                <div class="grid-item" data-input id="b1"></div>
+                <div class="grid-item" data-input id="b2"></div>
+                <div class="grid-item" data-input id="b3"></div>
+                <div class="grid-item" data-input id="b4"></div>
+                <div class="grid-item" data-input id="b5"></div>
+                <div class="grid-item" data-input id="b6"></div>
+                <div class="grid-item" data-input id="b7"></div>
+                <div class="grid-item" data-input id="b8"></div>
+                <div class="grid-item" data-input id="b9"></div>
+            </div>
+            <div class="result">
+                <div class="result-content">
+                    <div class="message"></div>
+                    <button class="btn" onclick="restart()">Restart</div>
+                </div>
+              </div> 
+        </div>
+    </div>
+
+</body>
+<script src="./assets/js/plugins/bootstrap.min.js"></script>
+<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+
+</html>
