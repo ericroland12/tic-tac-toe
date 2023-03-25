@@ -41,13 +41,17 @@ function inputPlayerOne(){
     form.addEventListener('submit', (event) => {
         event.preventDefault()
         // inputValue.value.classList.add('capitalize')
-        arr.push(inputValue.value)
+        if(inputValue.value == ""){return}
+        else{
+             arr.push(inputValue.value)
         playerTurn.innerText = `${arr[0]}'s Turn`
         console.log(arr)
         form.reset()
         label.innerHTML = "Player 2"
 
         inputPlayerTwo()
+        }
+       
     })
 }
 
@@ -56,10 +60,14 @@ startGame()
 function inputPlayerTwo(){
     form.addEventListener('submit', (event) => {
         event.preventDefault()
-        inputPlayerBox.style.display = 'none'
-        document.getElementsByClassName('text_1')[0].style.display = 'block'
-        playerTurn.style.display = 'block'
-        document.getElementsByClassName('box')[0].style.display = 'grid'
+         if(inputValue.value == ""){return}
+        else{
+         inputPlayerBox.style.display = 'none'
+         document.getElementsByClassName('text_1')[0].style.display = 'block'
+         playerTurn.style.display = 'block'
+         document.getElementsByClassName('box')[0].style.display = 'grid'
+        }
+       
     })
 }
 
