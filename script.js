@@ -59,8 +59,6 @@ startGame()
 function inputPlayerTwo(){
     form.addEventListener('submit', (event) => {
         event.preventDefault()
-         if(inputValue.value == ""){return}
-        else{
          inputPlayerBox.style.display = 'none'
          document.getElementsByClassName('text_1')[0].style.display = 'block'
          playerTurn.style.display = 'block'
