@@ -49,9 +49,8 @@ function inputPlayerOne(){
         form.reset()
         label.innerHTML = "Player 2"
 
-        inputPlayerTwo()
         }
-       
+         inputPlayerTwo()
     })
 }
 
