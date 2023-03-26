@@ -48,9 +48,9 @@ function inputPlayerOne(){
         console.log(arr)
         form.reset()
         label.innerHTML = "Player 2"
-
-        }
          inputPlayerTwo()
+        }
+         
     })
 }
 
