@@ -40,7 +40,6 @@ inputPlayerOne()
 function inputPlayerOne(){
     form.addEventListener('submit', (event) => {
         event.preventDefault()
-        // inputValue.value.classList.add('capitalize')
         if(inputValue.value == ""){return}
         else{
              arr.push(inputValue.value)
