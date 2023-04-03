@@ -38,16 +38,21 @@ inputPlayerOne()
 
 
 function inputPlayerOne(){
+   
     form.addEventListener('submit', (event) => {
         event.preventDefault()
-        // inputValue.value.classList.add('capitalize')
-        arr.push(inputValue.value)
-        playerTurn.innerText = `${arr[0]}'s Turn`
-        console.log(arr)
-        form.reset()
-        label.innerHTML = "Player 2"
+        if(inputValue.value == ""){return}
+        else{
+            // inputValue.value.classList.add('capitalize')
+            arr.push(inputValue.value)
+            playerTurn.innerText = `${arr[0]}'s Turn`
+            console.log(arr)
+            form.reset()
+            label.innerHTML = "Player 2"
 
-        inputPlayerTwo()
+            inputPlayerTwo()
+        }
+       
     })
 }
 
