@@ -1,3 +1,4 @@
+const jsConfetti = new JSConfetti()
 const b1 = document.getElementById('b1')
 const b2 = document.getElementById('b2')
 const b3 = document.getElementById('b3')
@@ -158,7 +159,8 @@ function displayResult(stroke, player){
        stroke.style.display = 'block'
     setTimeout(() => {
         result.style.display = 'block'
-        message.innerHTML = `${player} wins!`    
+        message.innerHTML = `${player} wins!`
+        jsConfetti.addConfetti()
     },1200)
 }
 
