@@ -1,4 +1,5 @@
-const jsConfetti = new JSConfetti()
+const jsConfetti = new JSConfetti() 
+const confetti = document.querySelector('#confetti')
 const b1 = document.getElementById('b1')
 const b2 = document.getElementById('b2')
 const b3 = document.getElementById('b3')
@@ -160,6 +161,7 @@ function displayResult(stroke, player){
     setTimeout(() => {
         result.style.display = 'block'
         message.innerHTML = `${player} wins!`
+        confetti.style.display = 'block'
         jsConfetti.addConfetti()
     },1200)
 }
